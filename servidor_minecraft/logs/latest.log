@@ -1,0 +1,211 @@
+[31Jan2026 21:38:03.050] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeserver, --fml.forgeVersion, 43.5.0, --fml.mcVersion, 1.19.2, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20220805.130853, nogui]
+[31Jan2026 21:38:03.054] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.8+10.0.8+main.0ef7e830 starting: java version 17.0.17 by Ubuntu; OS Linux arch amd64 version 6.8.0-1030-azure
+[31Jan2026 21:38:03.240] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/workspaces/shiny-broccoli/servidor_minecraft/libraries/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar%2362!/ Service=ModLauncher Env=SERVER
+[31Jan2026 21:38:03.560] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /workspaces/shiny-broccoli/servidor_minecraft/libraries/net/minecraftforge/fmlcore/1.19.2-43.5.0/fmlcore-1.19.2-43.5.0.jar is missing mods.toml file
+[31Jan2026 21:38:03.561] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /workspaces/shiny-broccoli/servidor_minecraft/libraries/net/minecraftforge/javafmllanguage/1.19.2-43.5.0/javafmllanguage-1.19.2-43.5.0.jar is missing mods.toml file
+[31Jan2026 21:38:03.564] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /workspaces/shiny-broccoli/servidor_minecraft/libraries/net/minecraftforge/lowcodelanguage/1.19.2-43.5.0/lowcodelanguage-1.19.2-43.5.0.jar is missing mods.toml file
+[31Jan2026 21:38:03.566] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /workspaces/shiny-broccoli/servidor_minecraft/libraries/net/minecraftforge/mclanguage/1.19.2-43.5.0/mclanguage-1.19.2-43.5.0.jar is missing mods.toml file
+[31Jan2026 21:38:03.723] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
+[31Jan2026 21:38:05.319] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[31Jan2026 21:38:05.417] [main/INFO] [mixin/]: Successfully loaded Mixin Connector [ca.spottedleaf.starlight.mixin.MixinConnector]
+[31Jan2026 21:38:05.417] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeserver' with arguments [nogui]
+[31Jan2026 21:38:05.476] [main/INFO] [Canary/]: Loaded configuration file for Canary: 117 options available, 0 override(s) found
+[31Jan2026 21:38:05.592] [main/INFO] [ModernFix/]: Loaded configuration file for ModernFix 5.18.1+mc1.19.2: 87 options available, 1 override(s) found
+[31Jan2026 21:38:05.593] [main/WARN] [ModernFix/]: Option 'mixin.bugfix.item_cache_flag' overriden (by mods [canary]) to 'false'
+[31Jan2026 21:38:05.594] [main/INFO] [ModernFix/]: Applying Nashorn fix
+[31Jan2026 21:38:05.609] [main/INFO] [ModernFix/]: Applied Forge config corruption patch
+[31Jan2026 21:38:06.567] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.3.2).
+[31Jan2026 21:38:06.748] [main/WARN] [net.minecraft.SystemReport/]: Failed retrieving info for group hardware
+java.lang.NoClassDefFoundError: com/sun/jna/Platform
+	at oshi.SystemInfo.<clinit>(SystemInfo.java:62) ~[oshi-core-5.8.5.jar%2371!/:5.8.5]
+	at net.minecraft.SystemReport.m_143564_(SystemReport.java:52) ~[server-1.19.2-20220805.130853-srg.jar%23136!/:?]
+	at net.minecraft.SystemReport.m_143516_(SystemReport.java:82) ~[server-1.19.2-20220805.130853-srg.jar%23136!/:?]
+	at net.minecraft.SystemReport.<init>(SystemReport.java:52) ~[server-1.19.2-20220805.130853-srg.jar%23136!/:?]
+	at net.minecraft.CrashReport.<init>(CrashReport.java:31) ~[server-1.19.2-20220805.130853-srg.jar%23136!/:?]
+	at net.minecraft.CrashReport.m_127529_(CrashReport.java:216) ~[server-1.19.2-20220805.130853-srg.jar%23136!/:?]
+	at net.minecraft.server.Main.main(Main.java:105) ~[server-1.19.2-20220805.130853-srg.jar%23136!/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at net.minecraftforge.fml.loading.targets.CommonServerLaunchHandler.lambda$launchService$0(CommonServerLaunchHandler.java:29) ~[fmlloader-1.19.2-43.5.0.jar%2369!/:?]
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.8.jar%2353!/:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.8.jar%2353!/:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.8.jar%2353!/:?]
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:106) ~[modlauncher-10.0.8.jar%2353!/:?]
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:77) ~[modlauncher-10.0.8.jar%2353!/:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.8.jar%2353!/:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.8.jar%2353!/:?]
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
+Caused by: java.lang.ClassNotFoundException: com.sun.jna.Platform
+	at jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?]
+	at cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:137) ~[securejarhandler-2.1.4.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?]
+	... 20 more
+[31Jan2026 21:38:06.814] [main/INFO] [net.minecraft.server.Bootstrap/]: ModernFix reached bootstrap stage (5.729 s after launch)
+[31Jan2026 21:38:06.908] [main/WARN] [mixin/]: @Final field delegatesByName:Ljava/util/Map; in modernfix-forge.mixins.json:perf.forge_registry_alloc.ForgeRegistryMixin should be final
+[31Jan2026 21:38:06.909] [main/WARN] [mixin/]: @Final field delegatesByValue:Ljava/util/Map; in modernfix-forge.mixins.json:perf.forge_registry_alloc.ForgeRegistryMixin should be final
+[31Jan2026 21:38:06.989] [main/INFO] [ModernFix/]: Injecting BlockStateBase cache population hook into getNeighborPathNodeType from com.abdelaziz.canary.mixin.ai.pathing.BlockStateBaseMixin
+[31Jan2026 21:38:06.990] [main/INFO] [ModernFix/]: Injecting BlockStateBase cache population hook into getPathNodeType from com.abdelaziz.canary.mixin.ai.pathing.BlockStateBaseMixin
+[31Jan2026 21:38:06.990] [main/INFO] [ModernFix/]: Injecting BlockStateBase cache population hook into m_60823_ from com.abdelaziz.canary.mixin.block.flatten_states.BlockStateBaseMixin
+[31Jan2026 21:38:06.990] [main/INFO] [ModernFix/]: Injecting BlockStateBase cache population hook into getOpacityIfCached from ca.spottedleaf.starlight.mixin.common.blockstate.BlockStateBaseMixin
+[31Jan2026 21:38:06.990] [main/INFO] [ModernFix/]: Injecting BlockStateBase cache population hook into isConditionallyFullOpaque from ca.spottedleaf.starlight.mixin.common.blockstate.BlockStateBaseMixin
+[31Jan2026 21:38:07.121] [main/WARN] [mixin/]: @Inject(@At("INVOKE")) Shift.BY=2 on sanitydim.mixins.json:MixinEntity::handler$zkl000$move exceeds the maximum allowed value: 0. Increase the value of maxShiftBy to suppress this warning.
+[31Jan2026 21:38:07.942] [main/INFO] [net.minecraft.server.Bootstrap/]: Vanilla bootstrap took 1125 milliseconds
+[31Jan2026 21:38:10.999] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 43.5.0, for MC 1.19.2 with MCP 20220805.130853
+[31Jan2026 21:38:11.000] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v43.5.0 Initialized
+[31Jan2026 21:38:11.183] [modloading-worker-0/INFO] [croissantnova.sanitydim.SanityMod/]: Applying dimension config example.toml
+[31Jan2026 21:38:11.753] [modloading-worker-0/INFO] [studio.lunareclipse.watching.Init/]: From The Fog Loaded Successfully!
+[31Jan2026 21:38:11.757] [modloading-worker-0/INFO] [voicechat/]: [voicechat] Compatibility version 20
+[31Jan2026 21:38:11.831] [modloading-worker-0/INFO] [voicechat/]: [voicechat] Loading plugins
+[31Jan2026 21:38:11.836] [modloading-worker-0/INFO] [voicechat/]: [voicechat] Loaded 0 plugin(s)
+[31Jan2026 21:38:11.839] [modloading-worker-0/INFO] [voicechat/]: [voicechat] Initializing plugins
+[31Jan2026 21:38:11.840] [modloading-worker-0/INFO] [voicechat/]: [voicechat] Initialized 0 plugin(s)
+[31Jan2026 21:38:11.922] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [canary] Starting version check at https://github.com/AbdElAziz333/Canary/raw/mc1.19.2/dev/updates.json
+[31Jan2026 21:38:12.196] [main/WARN] [net.minecraftforge.server.loading.ServerModLoader/LOADING]: Mods loaded with 2 warnings
+[31Jan2026 21:38:12.212] [main/WARN] [net.minecraftforge.server.loading.ServerModLoader/LOADING]: modernfix.no_ferritecore
+[31Jan2026 21:38:12.213] [main/WARN] [net.minecraftforge.server.loading.ServerModLoader/LOADING]: modernfix.perf_mod_warning
+[31Jan2026 21:38:12.211] [Forge Version Check/WARN] [net.minecraftforge.fml.VersionChecker/]: Failed to process update information
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 9 column 1 path $
+	at com.google.gson.Gson.fromJson(Gson.java:975) ~[gson-2.8.9.jar%2372!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:928) ~[gson-2.8.9.jar%2372!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:877) ~[gson-2.8.9.jar%2372!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:848) ~[gson-2.8.9.jar%2372!/:?]
+	at net.minecraftforge.fml.VersionChecker$1.process(VersionChecker.java:183) ~[fmlcore-1.19.2-43.5.0.jar%23137!/:?]
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?]
+	at net.minecraftforge.fml.VersionChecker$1.run(VersionChecker.java:114) ~[fmlcore-1.19.2-43.5.0.jar%23137!/:?]
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 9 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:384) ~[gson-2.8.9.jar%2372!/:?]
+	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:183) ~[gson-2.8.9.jar%2372!/:?]
+	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:145) ~[gson-2.8.9.jar%2372!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:963) ~[gson-2.8.9.jar%2372!/:?]
+	... 6 more
+[31Jan2026 21:38:12.213] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [voicechat] Starting version check at https://update.maxhenkel.de/forge/voicechat
+[31Jan2026 21:38:12.252] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[31Jan2026 21:38:12.353] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [voicechat] Found status: AHEAD Current: 1.19.2-2.6.11 Target: null
+[31Jan2026 21:38:12.354] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[31Jan2026 21:38:12.361] [main/INFO] [ModernFix/]: Bypassed Mojang DFU
+[31Jan2026 21:38:12.530] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: UP_TO_DATE Current: 43.5.0 Target: null
+[31Jan2026 21:38:12.530] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [sanitydim] Starting version check at https://raw.githubusercontent.com/croissantnova/SanityDescentIntoMadness/main/update.json
+[31Jan2026 21:38:12.563] [Thread-0/INFO] [ModernFix/]: Please use /mfsrc to reload any changed mod config files
+[31Jan2026 21:38:12.570] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [sanitydim] Found status: UP_TO_DATE Current: 1.1.0 Target: null
+[31Jan2026 21:38:12.604] [main/WARN] [net.minecraft.server.packs.VanillaPackResources/]: Assets URL 'union:/workspaces/shiny-broccoli/servidor_minecraft/libraries/net/minecraft/server/1.19.2-20220805.130853/server-1.19.2-20220805.130853-srg.jar%23136!/assets/.mcassetsroot' uses unexpected schema
+[31Jan2026 21:38:12.605] [main/WARN] [net.minecraft.server.packs.VanillaPackResources/]: Assets URL 'union:/workspaces/shiny-broccoli/servidor_minecraft/libraries/net/minecraft/server/1.19.2-20220805.130853/server-1.19.2-20220805.130853-srg.jar%23136!/data/.mcassetsroot' uses unexpected schema
+[31Jan2026 21:38:12.693] [main/WARN] [mixin/]: @Inject(@At("INVOKE")) Shift.BY=2 on sanitydim.mixins.json:MixinServerPlayerGameMode::handler$zkp000$destroyBlock exceeds the maximum allowed value: 0. Increase the value of maxShiftBy to suppress this warning.
+[31Jan2026 21:38:14.248] [main/INFO] [croissantnova.sanitydim.SanityMod/]: Registering sanity command...
+[31Jan2026 21:38:14.831] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 7 recipes
+[31Jan2026 21:38:15.053] [main/ERROR] [net.minecraft.server.ServerFunctionLibrary/]: Failed to load function watching:check
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command, see below for error at position 0: <--[HERE]
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760) ~[?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) ~[?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command, see below for error at position 0: <--[HERE]
+	at net.minecraft.commands.CommandFunction.m_77984_(CommandFunction.java:63) ~[server-1.19.2-20220805.130853-srg.jar%23136!/:?]
+	at net.minecraft.server.ServerFunctionLibrary.m_214320_(ServerFunctionLibrary.java:85) ~[server-1.19.2-20220805.130853-srg.jar%23136!/:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	... 6 more
+[31Jan2026 21:38:15.202] [main/ERROR] [net.minecraft.server.ServerAdvancementManager/]: Parsing error loading custom advancement man:thetear: Non [a-z0-9/._-] character in path of location: man:tearoftheman
+
+[31Jan2026 21:38:15.234] [main/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1287 advancements
+[31Jan2026 21:38:15.328] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting minecraft server version 1.19.2
+[31Jan2026 21:38:15.328] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Loading properties
+[31Jan2026 21:38:15.329] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Default game type: SURVIVAL
+[31Jan2026 21:38:15.329] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[31Jan2026 21:38:15.449] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting Minecraft server on *:25565
+[31Jan2026 21:38:15.486] [Server thread/INFO] [net.minecraft.server.network.ServerConnectionListener/]: Using epoll channel type
+[31Jan2026 21:38:15.578] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[31Jan2026 21:38:15.579] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: The server will make no attempt to authenticate usernames. Beware.
+[31Jan2026 21:38:15.579] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[31Jan2026 21:38:15.579] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: To change this, set "online-mode" to "true" in the server.properties file.
+[31Jan2026 21:38:15.632] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Preparing level "world"
+[31Jan2026 21:38:16.165] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[31Jan2026 21:38:16.169] [Server thread/WARN] [mixin/]: Method overwrite conflict for removeIf in modernfix-common.mixins.json:bugfix.paper_chunk_patches.SortedArraySetMixin, previously written by com.abdelaziz.canary.mixin.world.chunk_tickets.SortedArraySetMixin. Skipping method.
+[31Jan2026 21:38:17.386] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[31Jan2026 21:38:17.387] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[31Jan2026 21:38:17.387] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[31Jan2026 21:38:17.692] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 8%
+[31Jan2026 21:38:18.168] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 46%
+[31Jan2026 21:38:18.667] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 97%
+[31Jan2026 21:38:18.712] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 2545 ms
+[31Jan2026 21:38:18.712] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Done (3.122s)! For help, type "help"
+[31Jan2026 21:38:18.724] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[31Jan2026 21:38:18.751] [Server thread/WARN] [voicechat/]: [voicechat] Running in offline mode - Voice chat encryption is not secure!
+[31Jan2026 21:38:18.763] [VoiceChatServerThread/INFO] [voicechat/]: [voicechat] Voice host is 'capital-genius.gl.at.ply.gg:19831'
+[31Jan2026 21:38:18.763] [Server thread/WARN] [ModernFix/]: Dedicated server took 17.679 seconds to load
+[31Jan2026 21:38:18.769] [VoiceChatServerThread/INFO] [voicechat/]: [voicechat] Voice chat server started at port 19831
+[31Jan2026 21:38:25.287] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.server.PlayerAdvancements@51885666
+[31Jan2026 21:38:25.317] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: zznocturno019[/127.9.134.98:53561] logged in with entity id 209 at (-10.203469978303497, 63.0, -8.954462295013018)
+[31Jan2026 21:38:25.432] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: zznocturno019 joined the game
+[31Jan2026 21:38:25.561] [Server thread/INFO] [voicechat/]: [voicechat] Received secret request of zznocturno019 (20)
+[31Jan2026 21:38:25.562] [Server thread/INFO] [voicechat/]: [voicechat] Sent secret to zznocturno019
+[31Jan2026 21:38:26.564] [VoiceChatPacketProcessingThread/INFO] [voicechat/]: [voicechat] Successfully authenticated player 4fec4d6b-e068-3d7c-8dc1-d5ea6cb0bfda
+[31Jan2026 21:38:27.563] [VoiceChatPacketProcessingThread/INFO] [voicechat/]: [voicechat] Successfully validated connection of player 4fec4d6b-e068-3d7c-8dc1-d5ea6cb0bfda
+[31Jan2026 21:38:27.566] [VoiceChatPacketProcessingThread/INFO] [voicechat/]: [voicechat] Player zznocturno019 (4fec4d6b-e068-3d7c-8dc1-d5ea6cb0bfda) successfully connected to voice chat
+[31Jan2026 21:38:36.487] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2621ms or 52 ticks behind
+[31Jan2026 21:39:00.459] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.server.PlayerAdvancements@3157222a
+[31Jan2026 21:39:00.462] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: perikino[/127.164.30.112:60333] logged in with entity id 259 at (-7.735535020641561, 70.5, 13.483393911700944)
+[31Jan2026 21:39:00.466] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: perikino joined the game
+[31Jan2026 21:39:00.896] [Server thread/INFO] [voicechat/]: [voicechat] Received secret request of perikino (20)
+[31Jan2026 21:39:00.897] [Server thread/INFO] [voicechat/]: [voicechat] Sent secret to perikino
+[31Jan2026 21:39:02.399] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.server.PlayerAdvancements@5841ac5c
+[31Jan2026 21:39:02.402] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dorimen59[/127.198.103.9:34491] logged in with entity id 261 at (-4.699999988079071, 70.67675927506424, 12.87506164256193)
+[31Jan2026 21:39:02.406] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dorimen59 joined the game
+[31Jan2026 21:39:02.905] [VoiceChatPacketProcessingThread/INFO] [voicechat/]: [voicechat] Successfully authenticated player 6a5d9436-afd6-3daa-ab01-2f44ee1367c9
+[31Jan2026 21:39:03.303] [Server thread/INFO] [voicechat/]: [voicechat] Received secret request of Dorimen59 (20)
+[31Jan2026 21:39:03.304] [Server thread/INFO] [voicechat/]: [voicechat] Sent secret to Dorimen59
+[31Jan2026 21:39:03.596] [VoiceChatPacketProcessingThread/INFO] [voicechat/]: [voicechat] Successfully authenticated player 98b742d0-5803-37ab-b8d8-456c6a6d5adc
+[31Jan2026 21:39:03.905] [VoiceChatPacketProcessingThread/INFO] [voicechat/]: [voicechat] Successfully validated connection of player 6a5d9436-afd6-3daa-ab01-2f44ee1367c9
+[31Jan2026 21:39:03.906] [VoiceChatPacketProcessingThread/INFO] [voicechat/]: [voicechat] Player perikino (6a5d9436-afd6-3daa-ab01-2f44ee1367c9) successfully connected to voice chat
+[31Jan2026 21:39:04.291] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.server.PlayerAdvancements@3800aee5
+[31Jan2026 21:39:04.296] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: vestcasati1[/127.96.101.17:36571] logged in with entity id 264 at (-7.85857546975229, 70.0, 14.926495341529238)
+[31Jan2026 21:39:04.300] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: vestcasati1 joined the game
+[31Jan2026 21:39:04.595] [VoiceChatPacketProcessingThread/INFO] [voicechat/]: [voicechat] Successfully validated connection of player 98b742d0-5803-37ab-b8d8-456c6a6d5adc
+[31Jan2026 21:39:04.596] [VoiceChatPacketProcessingThread/INFO] [voicechat/]: [voicechat] Player Dorimen59 (98b742d0-5803-37ab-b8d8-456c6a6d5adc) successfully connected to voice chat
+[31Jan2026 21:39:04.825] [Server thread/INFO] [voicechat/]: [voicechat] Received secret request of vestcasati1 (20)
+[31Jan2026 21:39:04.827] [Server thread/INFO] [voicechat/]: [voicechat] Sent secret to vestcasati1
+[31Jan2026 21:39:05.573] [VoiceChatPacketProcessingThread/INFO] [voicechat/]: [voicechat] Successfully authenticated player b506780b-546e-3c4d-bc02-9c7f108e37a7
+[31Jan2026 21:39:06.360] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 14894ms or 297 ticks behind
+[31Jan2026 21:39:06.578] [VoiceChatPacketProcessingThread/INFO] [voicechat/]: [voicechat] Successfully validated connection of player b506780b-546e-3c4d-bc02-9c7f108e37a7
+[31Jan2026 21:39:06.578] [VoiceChatPacketProcessingThread/INFO] [voicechat/]: [voicechat] Player vestcasati1 (b506780b-546e-3c4d-bc02-9c7f108e37a7) successfully connected to voice chat
+[31Jan2026 21:39:41.230] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <zznocturno019> el server ta dando lag
+[31Jan2026 21:39:57.670] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 36354ms or 727 ticks behind
+[31Jan2026 21:40:46.901] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <zznocturno019> una reiniciada mejor?
+[31Jan2026 21:40:48.459] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 35792ms or 715 ticks behind
+[31Jan2026 21:40:57.819] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <perikino> xd
+[31Jan2026 21:41:09.005] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <zznocturno019> es que da lag porque el server esta puesto en latinoamerica
+[31Jan2026 21:41:24.056] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: perikino has made the advancement [Sweet Dreams]
+[31Jan2026 21:41:33.352] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 29935ms or 598 ticks behind
+[31Jan2026 21:42:01.908] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: perikino moved too quickly! 9.425029964787191,1.0244240882136921,-3.7019684474279373
+[31Jan2026 21:42:01.909] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dorimen59 moved too quickly! -4.538090403402711,-5.231523797587016,7.43899789182303
+[31Jan2026 21:42:06.558] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <zznocturno019> no puedo jugar me esta dando lag xd
+[31Jan2026 21:42:16.736] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 28420ms or 568 ticks behind
+[31Jan2026 21:42:30.272] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: perikino moved too quickly! 6.238241244748436,3.247796659746271,-7.512485308664591
+[31Jan2026 21:42:49.177] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 17460ms or 349 ticks behind
+[31Jan2026 21:42:59.892] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <zznocturno019> voy a cambiar la direccion del server que anda lageadisimo
+[31Jan2026 21:43:04.045] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: zznocturno019 lost connection: Disconnected
+[31Jan2026 21:43:04.045] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: zznocturno019 left the game
+[31Jan2026 21:43:04.048] [Server thread/INFO] [voicechat/]: [voicechat] Disconnecting client zznocturno019
+[31Jan2026 21:43:11.972] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping the server
+[31Jan2026 21:43:11.975] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[31Jan2026 21:43:11.975] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[31Jan2026 21:43:11.984] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: perikino lost connection: Server closed
+[31Jan2026 21:43:11.985] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: perikino left the game
+[31Jan2026 21:43:11.988] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: vestcasati1 lost connection: Server closed
+[31Jan2026 21:43:11.988] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: vestcasati1 left the game
+[31Jan2026 21:43:11.991] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[31Jan2026 21:43:12.075] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[31Jan2026 21:43:12.206] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[31Jan2026 21:43:12.207] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[31Jan2026 21:43:12.209] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/man:halucination
+[31Jan2026 21:43:12.225] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[31Jan2026 21:43:12.225] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[31Jan2026 21:43:12.225] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[31Jan2026 21:43:12.225] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (halucination): All chunks are saved
+[31Jan2026 21:43:12.225] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
